@@ -7,14 +7,11 @@ def get_pokemon_info(name):
     response = requests.get(url)
     if response.status_code == 200:
         pokemon_data = response.json()
-        #print(pokemon_data)
         return pokemon_data
     else:
         print(f"Not able to reterive the data\nError: {response.status_code}" )
-    
-    
 
-pokemon_name = "bulbasaur"
+pokemon_name = input("Enter the name of your favorite pokemon: ").lower()
 pokemon_info = get_pokemon_info(pokemon_name)
 
 if pokemon_info:
