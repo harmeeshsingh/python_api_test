@@ -15,7 +15,7 @@ pokemon_name = input("Enter the name of your favorite pokemon: ").lower()
 pokemon_info = get_pokemon_info(pokemon_name)
 
 if pokemon_info:
-    print(f"Name: {pokemon_info["name"]}")
-    print(f"Weight: {pokemon_info["weight"]}")
-    print(f"Order: {pokemon_info["order"]}")
+    print(f"Name: {pokemon_info['name']}")
+    print(f"Weight: {pokemon_info['weight']}")
+    print(f"Order: {pokemon_info['order']}")
 
